@@ -1,69 +1,60 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Football Quiz</title>
-
-    <!-- CONNECT CSS -->
+    <title>Football Quiz | 100 Hard Questions</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="container">
-
-        <div class="card">
+    <main class="container">
+        <section class="card">
 
             <h1>⚽ Football Quiz</h1>
+            <p class="subtitle">100 Hard Football Questions</p>
 
-            <p class="subtitle">
-                100 Hard Football Questions
-            </p>
-
-            <div class="progress">
-                <div class="progress-bar"></div>
+            <div class="progress-track">
+                <div id="progress-bar" class="progress-bar"></div>
             </div>
 
             <div id="quiz">
 
-                <div id="question"></div>
+                <p id="question-number" class="question-number"></p>
+
+                <h2 id="question"></h2>
 
                 <div id="options" class="options"></div>
 
                 <div class="controls">
-
-                    <div id="score">
-                        Score: 0
-                    </div>
-
-                    <button id="next-btn">
+                    <p id="score">Score: 0</p>
+                    <button id="next-btn" type="button">
                         Next Question
                     </button>
-
                 </div>
 
             </div>
 
-            <div id="result">
+            <div id="result" hidden>
 
                 <h2>🏆 Quiz Finished!</h2>
 
                 <p id="final-score"></p>
 
-                <button id="restart-btn">
+                <p id="result-message"></p>
+
+                <button id="restart-btn" type="button">
                     Play Again
                 </button>
 
             </div>
 
-        </div>
+        </section>
+    </main>
 
-    </div>
+    <script src="script.js" defer></script>
 
-    <!-- CONNECT JAVASCRIPT -->
-<script src="script.js"></script>
 </body>
 </html>
+
