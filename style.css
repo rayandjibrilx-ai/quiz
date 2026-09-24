@@ -134,11 +134,6 @@ button:not(.option):hover {
     background: #29ca69;
 }
 
-button:focus-visible {
-    outline: 3px solid white;
-    outline-offset: 3px;
-}
-
 #result {
     text-align: center;
 }
@@ -160,24 +155,19 @@ button:focus-visible {
 }
 
 @media (max-width: 600px) {
-
     body {
         padding: 10px;
     }
-
     .card {
         padding: 22px;
     }
-
     .controls {
         flex-direction: column;
         align-items: stretch;
     }
-
     #next-btn {
         width: 100%;
     }
-
     #score {
         text-align: center;
     }
